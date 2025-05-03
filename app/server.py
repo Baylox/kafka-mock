@@ -1,6 +1,7 @@
 # Server code for the Kafka mock broker
 import socket
-
+from app.parser import parse_header
+from app.handlers.api_versions import handle_api_versions
 
 def run_server():
     print("Kafka mock broker listening on port 9092...")
@@ -9,3 +10,8 @@ def run_server():
             conn, _ = server.accept()
             with conn:
                 data = conn.recv(1024)
+                if not data:
+                    continue
+                response = handle_api_versions(data)
+                if response:
+                    conn.sendall(response)
