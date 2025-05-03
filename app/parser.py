@@ -1,3 +1,4 @@
+# Kafka protocol parser 
 def parse_header(data: bytes):
     if len(data) < 12:
         return None
