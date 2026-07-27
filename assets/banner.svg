@@ -1,0 +1,54 @@
+<svg width="1200" height="280" viewBox="0 0 1200 280" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Kafka Mock Broker">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1200" y2="280" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#0d1117"/>
+      <stop offset="1" stop-color="#121a26"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#4493f8"/>
+      <stop offset="1" stop-color="#2dd4bf"/>
+    </linearGradient>
+    <clipPath id="rounded">
+      <rect width="1200" height="280" rx="14"/>
+    </clipPath>
+  </defs>
+
+  <g clip-path="url(#rounded)">
+    <rect width="1200" height="280" fill="url(#bg)"/>
+  </g>
+
+  <!-- Mark -->
+  <rect x="64" y="76" width="64" height="64" rx="14" fill="#0d1421" stroke="url(#accent)" stroke-width="1.5"/>
+  <text x="96" y="118" text-anchor="middle" font-family="Consolas, Menlo, 'DejaVu Sans Mono', monospace" font-size="26" font-weight="600" fill="url(#accent)">&gt;_</text>
+
+  <!-- Title block -->
+  <text x="152" y="112" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="44" font-weight="600" fill="#e6edf3">Kafka Mock Broker</text>
+  <text x="152" y="150" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="19" fill="#8b949e">A minimal Kafka wire-protocol broker written in pure Python</text>
+
+  <!-- Pills -->
+  <g font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="13.5">
+    <rect x="152" y="176" width="112" height="30" rx="15" fill="none" stroke="#30363d"/>
+    <text x="208" y="196" text-anchor="middle" fill="#9aa4b2">Python 3.9+</text>
+
+    <rect x="276" y="176" width="182" height="30" rx="15" fill="none" stroke="#30363d"/>
+    <text x="367" y="196" text-anchor="middle" fill="#9aa4b2">Standard library only</text>
+
+    <rect x="470" y="176" width="156" height="30" rx="15" fill="none" stroke="#30363d"/>
+    <text x="548" y="196" text-anchor="middle" fill="#9aa4b2">ApiVersions v0-4</text>
+
+    <rect x="638" y="176" width="98" height="30" rx="15" fill="none" stroke="#30363d"/>
+    <text x="687" y="196" text-anchor="middle" fill="#9aa4b2">TCP 9092</text>
+  </g>
+
+  <!-- Hex dump of the actual ApiVersions response emitted by the broker -->
+  <g font-family="Consolas, Menlo, 'DejaVu Sans Mono', monospace" font-size="14" xml:space="preserve">
+    <text x="880" y="78" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="12" letter-spacing="2" fill="#58627a">APIVERSIONS RESPONSE &#183; 37 BYTES</text>
+    <text x="880" y="106" fill="#4b5a70"><tspan fill="#333f52">0000</tspan>  00 00 00 21 66 3b 41 eb</text>
+    <text x="880" y="130" fill="#4b5a70"><tspan fill="#333f52">0008</tspan>  00 00 04 00 <tspan fill="url(#accent)">12</tspan> 00 00 00</text>
+    <text x="880" y="154" fill="#4b5a70"><tspan fill="#333f52">0010</tspan>  04 00 00 00 00 00 00 0b</text>
+    <text x="880" y="178" fill="#4b5a70"><tspan fill="#333f52">0018</tspan>  00 00 01 00 00 00 0d 00</text>
+    <text x="880" y="202" fill="#4b5a70"><tspan fill="#333f52">0020</tspan>  00 00 00 00 00</text>
+  </g>
+
+  <rect x="0.5" y="0.5" width="1199" height="279" rx="13.5" fill="none" stroke="#30363d"/>
+</svg>
